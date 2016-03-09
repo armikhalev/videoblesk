@@ -1,0 +1,160 @@
+@import url('bootstrap/css/bootstrap.min.css');
+
+.header_text {
+  color: white;
+  opacity: 0;
+  margin-top: 55px;
+  text-align: center;
+
+  -webkit-transition: margin-top .5s, opacity .5s;
+     -moz-transition: margin-top .5s, opacity .5s;
+      -ms-transition: margin-top .5s, opacity .5s;
+       -o-transition: margin-top .5s, opacity .5s;
+          transition: margin-top .5s, opacity .5s;
+
+}
+
+.header_text2{
+  color: white;
+  opacity: 0;
+  margin-top: 55px;
+  text-align: center;
+
+   -webkit-transition: margin-top 1s, opacity 1s;
+      -moz-transition: margin-top 1s, opacity 1s;
+       -ms-transition: margin-top 1s, opacity 1s;
+        -o-transition: margin-top 1s, opacity 1s;
+           transition: margin-top 1s, opacity 1s;
+           transition-delay: .5s;
+
+}
+
+
+/*************** Button *******************/
+.btn {
+  background: #ba6868;
+  background-image: -webkit-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -moz-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -ms-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -o-linear-gradient(top, #ba6868, #2980b9);
+  background-image: linear-gradient(to bottom, #ba6868, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 5em;
+  text-decoration: none;
+
+  opacity: 0;
+  margin-top: 55px;
+  text-align: center;
+
+   -webkit-transition: margin-top 1.3s, opacity 1.3s;
+      -moz-transition: margin-top 1.3s, opacity 1.3s;
+       -ms-transition: margin-top 1.3s, opacity 1.3s;
+        -o-transition: margin-top 1.3s, opacity 1.3s;
+           transition: margin-top 1.3s, opacity 1.3s;
+           transition-delay: 1s;
+
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+
+}
+
+
+/************** On Load move text up *****************/
+
+.upper {
+    opacity:1;
+    margin-top: 25px;
+}
+
+
+/*********************** Transitions **************************/
+.parent_header_text {
+    color: white;
+    opacity: 0;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.parent_btn {
+  background: #ba6868;
+  background-image: -webkit-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -moz-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -ms-linear-gradient(top, #ba6868, #2980b9);
+  background-image: -o-linear-gradient(top, #ba6868, #2980b9);
+  background-image: linear-gradient(to bottom, #ba6868, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 5em;
+  text-decoration: none;
+
+  opacity: 0;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/*******************************************/
+.poster{
+  filter:blur(5px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fullscreen-bg {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: -100;
+}
+
+.fullscreen-bg__video {
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 115%;
+   height: 115%;
+   min-width: 100%;
+   min-height: 100%;
+   -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 767px) {
+   .fullscreen-bg {
+       background: url('http://localhost/videoblesk/wp-content/uploads/photo/camera.jpg') center center / cover no-repeat;
+   }
+
+   .fullscreen-bg__video {
+       display: none;
+   }
+}
