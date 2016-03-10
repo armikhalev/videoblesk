@@ -1,87 +1,126 @@
 @import url('bootstrap/css/bootstrap.min.css');
 
 body {
-  background: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: #000;
 }
 
-.header_text {
-  color: white;
-  opacity: 0;
-  margin-top: 55px;
-  text-align: center;
+.container {
+  position: absolute;
+}
 
-  -webkit-transition: margin-top .5s, opacity .5s;
-     -moz-transition: margin-top .5s, opacity .5s;
-      -ms-transition: margin-top .5s, opacity .5s;
-       -o-transition: margin-top .5s, opacity .5s;
-          transition: margin-top .5s, opacity .5s;
+/**************** Navbar ************************/
+.navbar {
+     background: transparent;
+     border-color: transparent;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+     color: #0ef;
+}
+
+/* Active page */
+.navbar-inverse .nav .current_page_item a,
+.navbar-inverse .nav .current_page_item a:hover,
+.navbar-inverse .nav .current_page_item a:focus,
+.navbar-inverse .nav .current_page_parent a,
+.navbar-inverse .nav .current_page_parent a:hover,
+.navbar-inverse .nav .current_page_parent a:focus {
+
+  text-decoration: none;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 1px;
+
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #66CCFF;  /*change color of links in drop down here*/
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: red; /*Change rollover cell color here*/
+}
+
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+    color: #fff; /*Change active text color here*/
+
+}
+
+/****************** Header *********************/
+
+.header_text {
+    color: white;
+    opacity: 0;
+    margin-top: 55px;
+    text-align: center;
+
+    -webkit-transition: margin-top .5s, opacity .5s;
+       -moz-transition: margin-top .5s, opacity .5s;
+        -ms-transition: margin-top .5s, opacity .5s;
+         -o-transition: margin-top .5s, opacity .5s;
+            transition: margin-top .5s, opacity .5s;
 
 }
 
 .header_text2{
-  color: white;
-  opacity: 0;
-  margin-top: 55px;
-  text-align: center;
+    color: white;
+    opacity: 0;
+    margin-top: 55px;
+    text-align: center;
 
-   -webkit-transition: margin-top 1s, opacity 1s;
-      -moz-transition: margin-top 1s, opacity 1s;
-       -ms-transition: margin-top 1s, opacity 1s;
-        -o-transition: margin-top 1s, opacity 1s;
-           transition: margin-top 1s, opacity 1s;
-           transition-delay: .5s;
+     -webkit-transition: margin-top 1s, opacity 1s;
+        -moz-transition: margin-top 1s, opacity 1s;
+         -ms-transition: margin-top 1s, opacity 1s;
+          -o-transition: margin-top 1s, opacity 1s;
+             transition: margin-top 1s, opacity 1s;
+             transition-delay: .5s;
 
 }
 
 
 /*************** Buttons *******************/
 .btn {
-  background: #ba6868;
-  background-image: -webkit-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -moz-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -ms-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -o-linear-gradient(top, #ba6868, #2980b9);
-  background-image: linear-gradient(to bottom, #ba6868, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Georgia;
-  color: #ffffff;
-  font-size: 25px;
-  padding: 10px 20px 10px 20px;
-  margin-top: 5em;
-  text-decoration: none;
+    background-color: transparent;
 
-  opacity: 0;
-  margin-top: 55px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border-width: thin;
+    border-color: #fff;
+    font-family: Georgia;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5em;
+    text-decoration: none;
 
-   -webkit-transition: margin-top 1.3s, opacity 1.3s;
-      -moz-transition: margin-top 1.3s, opacity 1.3s;
-       -ms-transition: margin-top 1.3s, opacity 1.3s;
-        -o-transition: margin-top 1.3s, opacity 1.3s;
-           transition: margin-top 1.3s, opacity 1.3s;
-           transition-delay: 1s;
+    opacity: 0;
+    margin-top: 55px;
+
+     -webkit-transition: margin-top 1.3s, opacity 1.3s;
+        -moz-transition: margin-top 1.3s, opacity 1.3s;
+         -ms-transition: margin-top 1.3s, opacity 1.3s;
+          -o-transition: margin-top 1.3s, opacity 1.3s;
+             transition: margin-top 1.3s, opacity 1.3s;
+             transition-delay: 1s;
 
 }
 
 .btn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background-color: rgba(230, 249, 255, .3);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 
 }
 
 .pause {
-    margin-top: 58%;
-    margin-left: 1%;
+    position: fixed;
+    bottom:   20px;
+    left: 5vw;
   	background-color:transparent;
   	-moz-border-radius:19px;
   	-webkit-border-radius:19px;
@@ -129,17 +168,15 @@ body {
 }
 
 .parent_btn {
-  background: #ba6868;
-  background-image: -webkit-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -moz-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -ms-linear-gradient(top, #ba6868, #2980b9);
-  background-image: -o-linear-gradient(top, #ba6868, #2980b9);
-  background-image: linear-gradient(to bottom, #ba6868, #2980b9);
+  background-color: transparent;
+
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
+  border-width: thin;
+  border-color: #fff;
   font-family: Georgia;
-  color: #ffffff;
+  color: #fff;
   font-size: 25px;
   padding: 10px 20px 10px 20px;
   margin-top: 5em;
@@ -150,11 +187,18 @@ body {
   text-align: center;
 }
 
-/*******************************************/
+.parent_btn:hover {
+    background-color: rgba(230, 249, 255, .3);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+
+}
+
+/******************* Home page poster and video ************************/
 .poster{
   filter:blur(5px);
   -webkit-filter: blur(5px);
-  
+
   position: fixed;
   top: 0;
   right: 0;
@@ -208,9 +252,10 @@ body {
 /***************** Video controls ****************************/
 
 #seek-bar{
-  position: absolute;
-  margin-top: -1%;
-  margin-left: 10%;
+  position: fixed;
+  bottom:   20px;
+
+  margin-left: 10vw;
   width: 68%;
 
   opacity: 0.5;
@@ -223,8 +268,10 @@ body {
 }
 
 #volume-bar{
-  margin-top: -1%;
-  margin-right: 5%;
+  position: fixed;
+  bottom:   20px;
+
+  margin-left: 84vw;
   float:right;
   width: 10%;
 
@@ -238,7 +285,9 @@ body {
 }
 
 #mute{
-  position: absolute;
+  position: fixed;
+  bottom:   20px;
+
   margin-top: -1%;
   margin-left: 80%;
 
@@ -250,6 +299,7 @@ body {
           -o-transition: opacity .1s;
              transition: opacity .1s;
 }
+
 #seek-bar:hover, #volume-bar:hover, #mute:hover{
   opacity: 1;
 }
