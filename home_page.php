@@ -6,7 +6,7 @@
 <div class="row">
 
 
-         <div class="col-lg-12 text-center">
+         <div class="col-sm-12 text-center">
 
 
 							<div id="header_text" class="header_text">
@@ -63,5 +63,6 @@
 
 </div><!-- div class="videoControls" -->
 
-</div>
+</div><!-- container play -->
+
 <?php get_footer(); ?>

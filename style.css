@@ -4,10 +4,6 @@ body {
     background: #000;
 }
 
-.container {
-  position: absolute;
-}
-
 /**************** Navbar ************************/
 .navbar {
      background: transparent;
@@ -15,6 +11,7 @@ body {
 }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
      color: #0ef;
+
 }
 
 /* Active page */
@@ -31,20 +28,6 @@ body {
 
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    color: #262626;
-    text-decoration: none;
-    background-color: #66CCFF;  /*change color of links in drop down here*/
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-    text-decoration: none;
-    background-color: red; /*Change rollover cell color here*/
-}
-
-
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
     color: #fff; /*Change active text color here*/
 
@@ -56,7 +39,6 @@ body {
     color: white;
     opacity: 0;
     margin-top: 55px;
-    text-align: center;
 
     -webkit-transition: margin-top .5s, opacity .5s;
        -moz-transition: margin-top .5s, opacity .5s;
@@ -70,7 +52,6 @@ body {
     color: white;
     opacity: 0;
     margin-top: 55px;
-    text-align: center;
 
      -webkit-transition: margin-top 1s, opacity 1s;
         -moz-transition: margin-top 1s, opacity 1s;
@@ -164,7 +145,6 @@ body {
     color: white;
     opacity: 0;
     margin-top: 25px;
-    text-align: center;
 }
 
 .parent_btn {
@@ -184,7 +164,6 @@ body {
 
   opacity: 0;
   margin-top: 25px;
-  text-align: center;
 }
 
 .parent_btn:hover {
@@ -241,11 +220,23 @@ body {
 
 @media (max-width: 767px) {
    .fullscreen-bg {
-       background: url('http://localhost/videoblesk/wp-content/uploads/photo/camera.jpg') center center / cover no-repeat;
+       background: url('http://localhost/videoblesk/wp-content/uploads/photo/cameraFront.jpg') center center / cover no-repeat;
    }
 
    .fullscreen-bg__video, .btn {
        display: none;
+   }
+   .navbar-toggle {
+       color: #fff;
+     }
+
+   .navbar-collapse {
+       background-color: rgba(230, 249, 255, .3);
+   }
+
+   .navbar-collapse li a {
+      text-align: center;
+
    }
 }
 
