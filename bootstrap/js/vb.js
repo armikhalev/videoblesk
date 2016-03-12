@@ -11,6 +11,7 @@
 
         $(document).ready(function(){
 
+
             // run check on page load
             checkSize();
 
@@ -22,6 +23,9 @@
             $("#header_text2").addClass("upper");
             $("#btn").addClass("upper");
 
+            // Flying up effect for About page
+            $("#feedback").addClass("upper_feedback");
+            $("#feedback2").addClass("upper_feedback");
             // hide poster and button that appears after pause
             $(".poster").hide();
             $(".pause").hide();
@@ -38,14 +42,14 @@
                 if(video.paused){
 
                     $("#header_text").hide().animate({
-      opacity: 0
-  });
+                                            opacity: 0
+                                        });
                     $("#header_text2").hide().animate({
-      opacity: 0
-  });
+                                            opacity: 0
+                                        });
                     $("#btn").hide().animate({
-      opacity: 0
-  });
+                                            opacity: 0
+                                        });
 
                     $(".poster").hide();
                     $("nav").hide();
@@ -74,7 +78,7 @@
                       $("#seek-bar").hide();
                       $("#volume-bar").hide();
                       $("#mute").hide();
-                      
+
                       video.pause();
 
                 }
