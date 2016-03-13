@@ -6,12 +6,12 @@
 <div class="row-fluid">
 
            <!-- Background image -->
-           <div class="about_background">
-              <img src="http://localhost/videoblesk/wp-content/uploads/photo/noche.jpg" alt="night background">
+           <div class="main_background">
+              <img src="http://localhost/wordpress/wp-content/uploads/photo/noche.jpg" alt="night background">
            </div>
 </br>
-           <div class="col-sm-6">
-              <img class="img-responsive img-thumbnail" src="http://localhost/videoblesk/wp-content/uploads/2015/08/ava-1.jpg" alt="Andrei Shaikouski's photo">
+           <div id="avatar" class="col-sm-6">
+              <img class="img-responsive img-thumbnail" src="http://localhost/wordpress/wp-content/uploads/2015/08/ava-1.jpg" alt="Andrei Shaikouski's photo">
            </div>
 </br>
            <div class="col-sm-6 about_text text-justify">
@@ -34,7 +34,7 @@
 </br>
            <div class="well">
                  <p><b>Mark Avrelius</b>
-                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/videoblesk/wp-content/uploads/photo/avrelius.jpg">
+                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/wordpress/wp-content/uploads/photo/avrelius.jpg">
                  </p>
 
                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -43,7 +43,7 @@
 
            <div class="well">
                 <p><b>Julius Caesarus</b>
-                <img class="img-responsive img-circle feedback_icon" src="http://localhost/videoblesk/wp-content/uploads/photo/cesar.jpg">
+                <img class="img-responsive img-circle feedback_icon" src="http://localhost/wordpress/wp-content/uploads/photo/cesar.jpg">
                 </p>
 
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -54,7 +54,7 @@
 </br>
            <div class="well">
                  <p><b>Mark Avrelius</b>
-                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/videoblesk/wp-content/uploads/photo/avrelius.jpg">
+                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/wordpress/wp-content/uploads/photo/avrelius.jpg">
                  </p>
 
                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -63,7 +63,7 @@
 
            <div class="well">
                  <p><b>Julius Caesarus</b>
-                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/videoblesk/wp-content/uploads/photo/cesar.jpg">
+                 <img class="img-responsive img-circle feedback_icon" src="http://localhost/wordpress/wp-content/uploads/photo/cesar.jpg">
                  </p>
 
                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>

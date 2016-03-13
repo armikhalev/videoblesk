@@ -1,7 +1,12 @@
 @import url('bootstrap/css/bootstrap.min.css');
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
 
 body {
     background: #000;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #fff;
 }
 
 /**************** Navbar ************************/
@@ -177,7 +182,7 @@ body {
 
 /******************* Home page poster and video ************************/
 
-video {
+.fullscreen-bg video {
     background: transparent url('http://localhost/wordpress/wp-content/uploads/photo/Lens_Dad3blur.jpg') 50% 50% / cover no-repeat ;
 }
 
@@ -319,8 +324,7 @@ video {
 /*****************************************************************/
 
 
-.about_background {
-
+.main_background {
 
     position: fixed;
     margin: 0;
@@ -334,7 +338,7 @@ video {
     overflow: hidden;
     z-index: -1;
 }
-.about_background img {
+.main_background img {
 
     filter:blur(5px);
     -webkit-filter: blur(5px);
@@ -353,6 +357,7 @@ video {
       transform: translate(-50%, -50%);
 
 }
+
 
 .about_text {
     color: #fff;
@@ -394,4 +399,57 @@ video {
 .feedback_text .well img {
 
     display: inline-block;
+}
+
+/***************************************************************/
+/************************ WORKS page **************************/
+/*************************************************************/
+
+.videoWrap video {
+  background-color: rgba(000, 000, 000, 0.4);
+  padding: 0 15px 15px 15px;
+  margin: 0 0 5% 0;
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
+.videoWrap>p {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 20px;
+  background-color: rgba(000, 000, 000, 0.4);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  background-color: rgba(000, 000, 000, 0.4);
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  margin: 0 0 5% 0;
+}
+
+/********************** CONTACT page*******************/
+
+.contactWrap {
+  background-color: rgba(000, 000, 000, 0.4);
+  border-radius: 5px;
 }
