@@ -182,15 +182,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /******************* Home page poster and video ************************/
 
-.fullscreen-bg video {
-    background: transparent url('http://localhost/wordpress/wp-content/uploads/photo/Lens_Dad3blur.jpg') 50% 50% / cover no-repeat ;
-}
-
 .poster {
   position: fixed;
-
   top: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   left: 0;
@@ -198,9 +192,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .poster img {
+
+  background: transparent url('http://localhost/wordpress/wp-content/uploads/photo/Lens_Dad3blur.jpg') 50% 50% / cover no-repeat;
+
+
   position: absolute;
-   top: 50%;
-   left: 50%;
+  top: 50%;
+  left: 50%;
   width: 100%;
   min-width: 115%;
   min-height: 115%;
@@ -208,6 +206,10 @@ p, h1, h2, h3, h4, h5, h6 {
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.fullscreen-bg video {
+    background: transparent url('http://localhost/wordpress/wp-content/uploads/photo/Lens_Dad3blur.jpg') 50% 50% / cover no-repeat;
 }
 
 .fullscreen-bg {
