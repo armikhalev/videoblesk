@@ -1,10 +1,10 @@
 <?php /* Template Name: home_page */ ?>
+<!-- image that appears after pause , it is not the same source as poster in video  but the same image -->
 
 <?php get_header(); ?>
 
 <div id="container" class="container play">
 <div class="row">
-
 
          <div class="col-sm-12 text-center">
 
@@ -25,16 +25,15 @@
 						<!-- button that appears when video paused and on page load -->
 				 		<button type="button" id="btn" class="btn">Play video</button>
 
-				 <!-- image that appears after pause , it is not the same source as poster in video  but the same image -->
-				 <div class="poster">
-							<img src="http://localhost/videoblesk/wp-content/uploads/photo/camera.jpg" alt="camera photo">
-				 </div>
+            <div class="poster">
+                 <img alt="camera photo">
+            </div>
 
 				 <!-- make video fullscreen -->
 				 <div class="fullscreen-bg">
-					     <video loop poster="http://localhost/videoblesk/wp-content/uploads/photo/cameraFront.jpg" id="intro_video" class="fullscreen-bg__video">
+					     <video preload="none" id="intro_video" class="fullscreen-bg__video">
 
-					         <source src="http://localhost/videoblesk/wp-content/uploads/video/Andrei_Video.mp4" type="video/mp4">
+					         <source src="http://localhost/wordpress/wp-content/uploads/video/Andrei_Video.mp4" type="video/mp4">
 										 <p>
 								       Your browser doesn't support HTML5 video.
 								     </p>
